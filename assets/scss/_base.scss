@@ -1,0 +1,41 @@
+@import '_reset.scss';
+@import '_vars.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic');
+.container{
+    width: 100%;
+    max-width: $width-desktop;
+    margin-left: auto;
+    margin-right: auto;
+}
+body,html{
+    background-color: $palette-more;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.page{
+    padding-top: 110px;
+    padding-bottom: 80px;
+    &__grid{
+        display: flex;
+        justify-content: space-between;;
+    }
+    &__left-sidebar{
+        width: 240px;
+    }
+    &__center{
+        width: 840px;
+    }
+    &__right-sidebar{
+        width: 300px;
+    }
+    &__box{
+        border-radius: 2px;
+        border: 1px solid $palette-border;
+        background-color: #fff;
+        padding: 40px 30px;
+        width: 100%;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}

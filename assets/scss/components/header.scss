@@ -1,0 +1,25 @@
+@import '../vars.scss';
+.header{
+    background-color: $palette-base;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    &__logo{
+        width: 140px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+    }
+}

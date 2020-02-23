@@ -1,0 +1,44 @@
+@import '../vars.scss';
+.header-search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__input{
+        width: 360px;
+        input{
+            width: 100%;
+            padding: 0;
+            height: 40px;
+            border: none;
+            background-color: $palette-primary;
+            outline: none;
+            padding-left: 15px;
+            padding-right: 55px;
+            text-transform: lowercase;
+            font-size: 12px;
+            color: #fff;
+            &:focus::placeholder{
+                opacity: 0;
+            }
+            &::placeholder{
+                color: $palette-additional;
+            }
+        }
+    }
+    &__button{
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        img{
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
